@@ -168,7 +168,7 @@ nav a:hover{
     content: "";
     filter: brightness(70%) saturate(1.5);
     position: absolute;
-    height: 100%;
+    height: 150%;
 	width: 100%;
 	z-index: -1;
 }

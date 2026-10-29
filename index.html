@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="main.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/webkit/stylesheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Rakkas&display=swap');
+    </style>
+
+    <title>Home | Here Be Dragons</title>
+</head>
+<body>
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dragons.html">Dragons</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dragons.html">Dragons</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-icon"><i class="fa-solid fa-dragon"></i></a>
+        <span onclick="openNav()">&#9776;</span>
+    </nav>
+    <header class="hero">
+            <h1>Here Be Dragons</h1>
+            <p>Legends made real</p>
+            <a href="dragons.html" class="pri-btn">Learn More</a>
+    </header>
+    <main>
+        <!---------- section 1 ---------->
+        <div class="sect1">
+            <h2><span>Dragons</span> have captured our imaginations for centuries.</h2>
+            <p>From towering peaks of mountain ranges to the depths of the sea, dragons are a widespread species, inhabiting nearly every continent and ocean.</p>
+            <p>These creatures come in various unique forms, featured in folklore and numerous myths. Cultures, no matter how far apart, are united in their legends of the same animal.</p>
+            <p>Here, you will find an overview of some well-known species, general behaviors, physical descriptions, and more.</p>
+            <!-- <a href="dragons.html" class="pri-btn">Read More</a> -->
+        </div>
+        <!---------- end section 1 ---------->
+
+        <!---------- section 2 ---------->
+        <div class="sect2">
+            <div class="cards">
+                <a href="dragons.html" class="card1">
+                    <p>About Dragons</p>
+                    <img src="assets/dragon_vines.svg" alt="">
+                </a>
+                <a href="categories.html" class="card2">
+                    <p>Categories</p>
+                    <img src="assets/dragon_clouds.svg" alt="">
+                </a>
+            </div>
+            <div class="sect2-text">
+                <h2>There are over 100 endangered species of dragon.
+                <br>
+                Learn how <span>you</span> can help protect them!
+                </h2>
+                <a href="conservation.html" class="pri-btn">Conservation</a>
+            </div>
+        </div>
+        <!---------- end section 2 ---------->
+
+        <!---------- section 3 ---------->
+        <div class="sect3">
+            <img src="assets/dragon3.svg" alt="" class="side-img1">
+            <div>
+                <p>Join our <span>newsletter</span></p>
+                <form class="news-form">
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <img src="assets/dragon3.svg" alt="" class="side-img2">
+        </div>
+        <!---------- end section 3 ---------->
+    </main>
+    <footer>
+        <div>
+            <p>© Here Be Dragons. All rights reserved.</p>
+            <a href="#">contact@herebedragons.com</a>
+        </div>
+        <div class="socials">
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

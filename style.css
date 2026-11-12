@@ -36,7 +36,7 @@ h2{
     letter-spacing: 0.1rem;
     line-height: 2rem;
 }
-p:not(.cards p, footer p){
+p:not(.big-btns p, footer p), ul, blockquote{
     font-size: 0.9rem;
 }
 /***** buttons *****/
@@ -61,12 +61,30 @@ button{
     transform: scale(1.05);
 }
 
+/***** cta *****/
+.drag-cta{
+    align-items: center;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(assets/dragon13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 3rem;
+    text-align: center;
+}
+.drag-cta h2{
+    color: var(--accent2);
+}
+
 /************* end general *************/
 
 /************* nav *************/
 nav{
     font-size: 1.1rem;
     text-align: center;
+    transition: all 0.5s ease;
 }
 nav li{
     list-style: none;
@@ -98,9 +116,6 @@ nav a:hover{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /* position: sticky;
-    top: 0;
-    z-index: 1; */
 }
 .nav-icon{
     color: var(--tertiary);
@@ -145,8 +160,46 @@ nav a:hover{
 .closebtn:hover{
     color: var(--tertiary);
 }
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
 /************* end nav *************/
+
+/************* footer *************/
+footer{
+    background-color: var(--secondary);
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    letter-spacing: .05rem;
+    padding: 2.5rem 2rem 1.5rem;
+    text-align: center;
+}
+footer p{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+footer a{
+    color: var(--accent1);
+    font-size: .9rem;
+}
+footer a:hover{
+    color: var(--accent2);
+}
+.socials{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+.socials i{
+    font-size: 1.5rem;
+}
+
+/************* end footer *************/
 
 /************* home *************/
 /***** hero *****/
@@ -160,17 +213,19 @@ nav a:hover{
     padding: 2rem;
 }
 .hero::before{
-    background-attachment: fixed;
-    background-image: url(assets/dragons5v2.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-	background-size: cover;
-    content: "";
-    filter: brightness(70%) saturate(1.5);
     position: absolute;
     height: 120%;
 	width: 100%;
 	z-index: -1;
+}
+#home-hero::before{
+    background-attachment: fixed;
+    background-image: url(assets/dragon-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+    content: "";
+    filter: brightness(60%) saturate(1.5);
 }
 .hero h1{
     color: var(--tertiary);
@@ -190,7 +245,7 @@ nav a:hover{
 
 /***** section 1 *****/
 /* use for desktop */
-/* .sect1{
+/* .main-text{
     align-items: flex-start;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(assets/dragons2v3.png);
     background-position: center top;
@@ -202,29 +257,26 @@ nav a:hover{
     gap: .5rem;
     padding: 2rem;
 } */
-.sect1{
+.main-text{
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
     gap: .5rem;
     padding: 2rem;
 }
-.sect1 h2{
-    color: var(--accent1);
-    margin-bottom: 0.8rem;
+.main-text h2, .species h2{
+    margin-bottom: .5rem;
 }
-.sect1 span{
-    color: var(--secondary);
+.highlight{
+    background: linear-gradient(0deg, var(--accent2) 50%, transparent 50%, transparent 100%);
 }
-.sect1 p{
-    /* font-weight: 300; */
-    /* letter-spacing: .05rem; */
+.main-text p, .species p, ul, blockquote{
     line-height: 1.5rem;
 }
 
 /***** section 2 *****/
 .sect2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(assets/dragon12v3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/dragon12v3.jpg);
     background-position: 55%;
     background-repeat: no-repeat;
 	background-size: cover;
@@ -247,18 +299,17 @@ nav a:hover{
     color: var(--primary);
 }
 .sect2 .pri-btn{
-    font-size: .75rem;
     margin-bottom: .75rem;
     margin-top: 1rem;
     padding: .75rem 1.25rem;
 }
-.cards{
+.big-btns{
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     gap: 1.5rem;
 }
-.card1, .card2{
+.big-btn1, .big-btn2{
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: #f2e4c821;
@@ -278,16 +329,16 @@ nav a:hover{
     text-decoration: none;
     text-transform: uppercase;
 }
-.card1 img, .card2 img{
+.big-btn1 img, .big-btn2 img{
     opacity: 0.15;
     position: absolute;
     width: 105%;
 }
-.card2 img{
+.big-btn2 img{
     opacity: 0.12;
     width: 125%;
 }
-.card1:hover, .card2:hover, .card1:focus, .card2:focus{
+.big-btn1:hover, .big-btn2:hover, .big-btn1:focus, .big-btn2:focus{
     background-color: #f2e4c83e;
     color: var(--tertiary);
     transform: scale(1.02);
@@ -296,7 +347,7 @@ nav a:hover{
 /***** section 3 *****/
 .sect3{
     background-color: var(--tertiary);
-    background-image: linear-gradient(rgba(242, 230, 201, 0.6) 0%, rgba(242, 230, 201, 0.6) 100%), url(assets/dragon3.svg);
+    background-image: linear-gradient(rgba(242, 230, 201, 0.6), rgba(242, 230, 201, 0.6)), url(assets/dragon3.svg);
     background-position: 50% 25%;
     background-repeat: no-repeat;
 	background-size: 125%;
@@ -362,35 +413,143 @@ nav a:hover{
     color: var(--primary);
     transition: all .3s ease;
 }
-/***** footer *****/
-footer{
-    background-color: var(--secondary);
+
+/************* end home *************/
+
+/************* dragons *************/
+/***** hero *****/
+#dragons-hero::before{
+    background-attachment: fixed;
+    background-image: url(assets/dragon10.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+	background-size: cover;
+    content: "";
+    filter: brightness(50%) saturate(1.5);
+}
+#dragons-hero p{
+    letter-spacing: .05rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: none;
+}
+.sect-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    justify-content: center;
+}
+.sect-btns a{
+    border: 1.5px solid var(--accent1);
+    font-weight: 400;
+    letter-spacing: .1rem;
+    padding: .5rem .8rem;
+}
+
+/***** description, distribution, behavior *****/
+#drag-desc, #drag-behav{
+    display: flex;
+    flex-direction: column;
+}
+#drag-dist{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/mapv2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--primary);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+}
+#drag-dist ul{
+    margin: 0 1.5rem;
+}
+#drag-dist ul li::marker{
+    color: var(--accent2);
+    font-size: 0.8rem;
+}
+.col-1, .col-2{
     letter-spacing: .05rem;
-    padding: 2.5rem 2rem 1.5rem;
-    text-align: center;
+    font-weight: 300;
 }
-footer p{
-    font-size: .8rem;
-    margin-bottom: .5rem;
-}
-footer a{
-    color: var(--accent1);
-    font-size: .9rem;
-}
-footer a:hover{
+#drag-dist h2{
     color: var(--accent2);
 }
-.socials{
-    display: flex;
-    gap: .5rem;
-    justify-content: center;
+#drag-dist p{
+    margin-bottom: .5rem;
 }
-.socials i{
-    font-size: 1.5rem;
+.col-1 strong, .col-2 strong{
+    font-weight: bold;
+}
+blockquote{
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--accent1);
+    margin: 1.5rem 0 .5rem;
+    padding: 1rem 1.2rem;
 }
 
-/************* end home *************/
+/***** species *****/
+.species{
+    background-color: var(--tertiary);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.species img{
+    width: 100%;
+}
+.species h3, #factvsfiction h3{
+    font-family: 'Google Sans Flex', sans-serif;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.card{
+    background-color: var(--primary);
+    border: 1px solid var(--accent1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem 1.25rem;
+}
+
+/***** species *****/
+#factvsfiction{
+    gap: 1rem;
+}
+#factvsfiction h3{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+#factvsfiction h2{
+    margin-bottom: 0;
+}
+
+/************* end dragons *************/
+
+/************* categories *************/
+/***** hero *****/
+#categories-hero::before{
+    background-attachment: fixed;
+    background-image: url(assets/dragons5v2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+    content: "";
+    filter: brightness(50%) saturate(1.5);
+}
+
+/***** wyverns *****/
+#wyverns, #drakes, #seaserpents, #wyrms, #truedragons{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+/************* end categories *************/

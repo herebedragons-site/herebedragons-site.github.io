@@ -264,13 +264,13 @@ footer a:hover{
     gap: .5rem;
     padding: 2rem;
 }
-.main-text h2, .species h2{
+.main-text h2, #species h2{
     margin-bottom: .5rem;
 }
 .highlight{
     background: linear-gradient(0deg, var(--accent2) 50%, transparent 50%, transparent 100%);
 }
-.main-text p, .species p, ul, blockquote{
+.main-text p, #species p, ul, blockquote{
     line-height: 1.5rem;
 }
 
@@ -488,7 +488,7 @@ blockquote{
 }
 
 /***** species *****/
-.species{
+#species{
     background-color: var(--tertiary);
     display: flex;
     flex-direction: column;
@@ -496,10 +496,10 @@ blockquote{
     padding: 2rem 1rem;
     text-align: center;
 }
-.species img{
+#species img{
     width: 100%;
 }
-.species h3, #factvsfiction h3{
+#species h3, #factvsfiction h3{
     font-family: 'Google Sans Flex', sans-serif;
 }
 .cards{

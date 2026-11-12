@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="main.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/webkit/stylesheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Rakkas&display=swap');
+    </style>
+
+    <title>Dragons | Here Be Dragons</title>
+</head>
+<body>
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dragons.html">Dragons</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dragons.html">Dragons</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-menu" id="nav-change">
+        <a href="index.html" class="nav-icon"><i class="fa-solid fa-dragon"></i></a>
+        <span onclick="openNav()">&#9776;</span>
+    </nav>
+    <header class="hero" id="dragons-hero">
+            <h1>Dragons: Basic Info</h1>
+            <p>The term "dragon" refers to serpentine, reptilian creatures, consisting of several orders and species. Many are famous for their flight or fire-breathing ability.</p>
+            <div class="sect-btns">
+                <a href="#drag-desc" class="pri-btn">Description</a>
+                <a href="#drag-dist" class="pri-btn">Distribution</a>
+                <a href="#drag-behav" class="pri-btn">Behavior</a>
+                <a href="#species" class="pri-btn">Noteworthy Species</a>
+                <a href="#factvsfiction" class="pri-btn">Fact vs Fiction</a>
+            </div>
+    </header>
+    <main>
+        <!---------- description ---------->
+        <div id="drag-desc">
+            <div class="main-text">
+                <h2>Description</h2>
+                    <p>Dragons are similar to reptiles, with long bodies and scales (usually) in a wide range of colors and sizes. They can have one pair of wings and one pair of legs, two pairs of legs/fins, one pair of legs/fins, or no limbs at all. The majority of species have claws, horns, spikes, or natural armor.</p>
+                    <p>Though dragons are under the class Reptilia, they belong to their own order: <strong class="highlight">Dracos</strong>. This is separate from lizards, snakes, and turtles. Within this order are five families: wyverns, drakes, sea serpents, wyrms, and true dragons.</p>
+            </div>
+            <img src="assets/dragon17.jpg" alt="Photorealistic dragon's head, with brown and orange coloration.">
+        </div>
+        <!---------- end description ---------->
+
+        <!---------- distribution ---------->
+        <div id="drag-dist" class="main-text">
+            <h2>Distribution</h2>
+            <div class="col-1">
+                <p>Dragons inhabit almost every biome and environment. This includes:</p>
+                <ul>
+                    <li>Forests</li>
+                    <li>Oceans</li>
+                    <li>Deserts</li>
+                    <li>Grasslands</li>
+                    <li>Mountains</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <p>However, in recent centuries, dragons have been on a steady decline due to habitat loss, human activity, a decrease in food availability, and poaching. Luckily, many <strong>conservation efforts</strong> are working hard to preserve endangered species.</p>
+                <blockquote>"Dragons are essential to the environment for indirectly shaping the land. By regulating prey numbers, dragons allow other plants and animals to flourish in a <strong>domino effect</strong>—impacting birds, fish, and even butterflies."
+                <br><em>— 4Dragons Conservatory</em></blockquote>
+            </div>
+        </div>
+        <!---------- end distribution ---------->
+
+        <!---------- behavior ---------->
+        <div id="drag-behav">
+            <div class="main-text">
+                <h2>Behavior</h2>
+                <p>Across the various dragon species, behavior varies. Generally, dragons are cautious and elusive, preferring to avoid humans, and some even fear people outright.</p>
+                <p>Their complex brains put them on par with birds and mammals, with a few species being intelligent enough to deploy hunting strategies.</p>
+                <p>Dragons occupy several predatory niches, from pack hunters to solo or apex predators. They have the capacity to socialize and form <strong>close bonds</strong>, or remain solitary.</p>
+                <p>Contrary to popular belief, dragons are not bloodthirsty, but are highly aggressive when defending their young or their territory, which can span hundreds of miles for larger species. It is best to leave the area if there are signs of dragon activity (scorch marks, talon gouges, scale sheds, etc). <strong>Many dragons are extremely dangerous.</strong></p>
+            </div>
+            <img src="assets/dragon23.jpg" alt="A small, orange dragon with its wings spread and jaws open.">
+        </div>
+        <!---------- end behavior ---------->
+
+        <!---------- species ---------->
+        <div class="species">
+            <h2>Noteworthy Species</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/green-dragon.png" alt="Coast of Cape Town, South Africa on a sunny day.">
+                    <div>
+                        <h3>Common Green Dragon</h3>
+                        <p>When someone uses the word "dragon," they are likely referring to the common green dragon, classified as a true dragon.</p>
+                        <p>This species was the most prolific across Europe, named for their green coloration. The green dragon is a mid-sized animal for their class, though this has been exaggerated in many stories. Due to their numbers, they were prevalent in European folklore.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/banded-wyrm.png" alt=" Sign that says 'Welcome to Wales.'">
+                    <div>
+                        <h3>Banded Wyrm</h3>
+                        <p>At a mere three to four inches in length, this dragon is the smallest species of dragon discovered, found in New Guinea. They can fit in the palm of your hand and could be confused for lizards if not for their small horns and two legs.</p>
+                        <p> The banded wyrm is named for the bold black stripes along their tails. Their diet mainly consists of insects, snails, and  frogs.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/dragon.jpg" alt=" Sign that says 'Welcome to Wales.'">
+                    <div>
+                        <h3>Eurasian Mountain Dragon</h3>
+                        <p>This dragon, also classified as a true dragon, is the largest dragon species in the world, almost as large as a small aircraft and able to look a giraffe in the eye. They inhabit mountains and extensive mountain ranges.</p>
+                        <p>They are endangered, with only a few thousand still living in the wild. Their biggest threat was "dragon-slaying" in the Middle Ages, which continued with habitat loss and poaching in modern times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------- end species ---------->
+
+        <!---------- fact vs fiction ---------->
+        <div id="factvsfiction" class="main-text">
+            <h2>Fact vs Fiction</h2>
+            <div>
+                <h3>Dragons are cold-blooded.</h3>
+                <p>Fiction. Though they are related to reptiles, dragons lack many defining traits, such as ectothermy. Like mammals, they are actually warm-blooded, or endothermic, which allows them to live a more active lifestyle.</p>
+            </div>
+            <div>
+                <h3>Dragons eat humans/livestock.</h3>
+                <p>A bit of both fact and fiction. Dragons typically avoid human settlements and only hunt livestock or people if their normal prey is unavailable, or they are injured/sick, and thus forced to hunt easier yet riskier targets.</p>
+            </div>
+            <div>
+                <h3>Dragons hoard gold.</h3>
+                <p>Fiction. However, some species of dragon are known to swallow precious stones that may aid in their fire-breathing. This could have given rise to hoarding gold in myths.</p>
+            </div>
+        </div>
+        <!---------- end fact vs fiction ---------->
+
+        <!---------- cta ---------->
+        <div class="drag-cta">
+            <h2>Support conservationists and learn about protecting dragons!</h2>
+            <a href="conservation.html" class="pri-btn">Conservation</a>
+        </div>
+        <!---------- end cta ---------->
+    </main>
+    <footer>
+        <div>
+            <p>© Here Be Dragons. All rights reserved.</p>
+            <a href="#">contact@herebedragons.com</a>
+        </div>
+        <div class="socials">
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

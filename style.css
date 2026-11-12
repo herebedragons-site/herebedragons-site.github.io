@@ -542,7 +542,7 @@ blockquote{
     background-repeat: no-repeat;
 	background-size: cover;
     content: "";
-    filter: brightness(50%) saturate(1.5);
+    filter: brightness(60%) saturate(1.5);
 }
 
 /***** wyverns *****/

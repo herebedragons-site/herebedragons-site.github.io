@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="main.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/webkit/stylesheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Rakkas&display=swap');
+    </style>
+
+    <title>Dragons | Here Be Dragons</title>
+</head>
+<body>
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dragons.html">Dragons</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dragons.html">Dragons</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-menu" id="nav-change">
+        <a href="index.html" class="nav-icon"><i class="fa-solid fa-dragon"></i></a>
+        <span onclick="openNav()">&#9776;</span>
+    </nav>
+    <header class="hero" id="categories-hero">
+        <h1>Dragon Categories</h1>
+        <div class="sect-btns">
+            <a href="#wyverns" class="pri-btn">Wyverns</a>
+            <a href="#drakes" class="pri-btn">Drakes</a>
+            <a href="#seaserpents" class="pri-btn">Sea Serpents</a>
+            <a href="#wyrms" class="pri-btn">Wyrms</a>
+            <a href="#truedragons" class="pri-btn">True Dragons</a>
+        </div>
+    </header>
+    <main>
+        <!---------- wyverns ---------->
+        <div id="wyverns">
+            <img src="assets/dragon22.jpg" alt="A small brown dragon with a snake-like head.">
+            <div class="main-text">
+                <h2>Wyverns</h2>
+                <p><strong>Habitat:</strong> islands, mountains, forests</p>
+                <p><strong>Size:</strong> 4 to 8ft long, 5 to 10ft wingspans</p>
+                <p><strong>Diet:</strong> fruit, fungi, small to mid-sized reptiles, mammals, birds</p>
+                <p>Wyverns are characterized by their ability to spit venom or acid, or possessing fangs, barbs, stingers, or other means to inject venom. They are closely related to true dragons, though these dragons are smaller and cannot breathe fire.</p>
+            </div>
+        </div>
+        <!---------- end wyverns ---------->
+
+        <!---------- drakes ---------->
+        <div id="drakes">
+            <img src="assets/drakev2.png" alt="A large, brown wingless dragon on a beach.">
+            <div class="main-text">
+                <h2>Drakes</h2>
+                <p><strong>Habitat:</strong> coasts, tundras, mountains, forests, grasslands</p>
+                <p><strong>Size:</strong> 25 to 52ft long</p>
+                <p><strong>Diet:</strong> fruit, fish, large and mid-sized animals</p>
+                <p>Drakes are large, heavyset, flightless dragons that can be terrestrial or semi-aquatic, lacking wings entirely. Unlike wyrms, they do not have a sprawling gait, but an erect one similar to mammals, with their limbs directly under their bodies. A few drake species can breathe fire, however, not to the extent of true dragons. Moreover, the majority of them have lost the ability.</p>
+            </div>
+        </div>
+        <!---------- end drakes ---------->
+
+        <!---------- sea serpents ---------->
+        <div id="seaserpents">
+            <img src="assets/seaserpent.jpg" alt="A sea serpent being attacked by a whale.">
+            <div class="main-text">
+                <h2>Sea Serpents</h2>
+                <p><strong>Habitat:</strong> oceans, swamps, rivers, wetlands, lakes</p>
+                <p><strong>Size:</strong> 16 to 72ft long</p>
+                <p><strong>Diet:</strong> fish, frogs, squid (or giant squid), seals, cetaceans, shrimp, krill</p>
+                <p>This an aquatic family related to drakes. Sea serpents have four flippers and either fluked or paddle-like tails. Some species even have whiskers, similar to catfish, to navigate the waters. They do not have gills, so they must periodically surface for air.</p>
+            </div>
+        </div>
+        <!---------- end sea serpents ---------->
+
+        <!---------- wyrms ---------->
+        <div id="wyrms">
+            <img src="assets/wyrm.png" alt="A light brown wingless dragon with a long body, short limbs, and black markings.">
+            <div class="main-text">
+                <h2>Wyrms</h2>
+                <p><strong>Habitat:</strong> forests, deserts, jungles, rivers, swamps</p>
+                <p><strong>Size:</strong> 3in to 30ft long</p>
+                <p><strong>Diet:</strong> small to mid-sized reptiles or mammals, birds, insects</p>
+                <p>Wyrms may seem similar to drakes and sea serpents at first, however, they generally have much shorter limbs and longer bodies, and contain the only dragon species to have only two legs or lack limbs altogether. They are also land-dwelling, but can be semi-aquatic in some cases.</p>
+            </div>
+        </div>
+        <!---------- end wyrms ---------->
+
+        <!---------- true dragons ---------->
+        <div id="truedragons">
+            <img src="assets/dragon19v2.png" alt="A black dragon flying and breathing fire.">
+            <div class="main-text">
+                <h2>True Dragons</h2>
+                <p><strong>Habitat:</strong> mountains, wetlands, islands, forests, grasslands</p>
+                <p><strong>Size:</strong> 12 to 50ft long, 18 to 82ft wingspans</p>
+                <p><strong>Diet:</strong> fish, large animals, mid-sized animals (buffalo, deer, etc)</p>
+                <p>This is the most well-known family of dragons, and often what people think of when they hear the term "dragon." They are famous for breathing fire, being the largest out of all the types, and are also the most widespread.</p>
+                <p>True dragons can all breathe fire and fly, and they all possess one pair of wings and one pair of legs.</p>
+                <p>Their success can be attributed to their ability to spit fire, burning their prey. Cooked meat has several advantages, such as making it easier to consume, digest, and absorb nutrients.</p>
+            </div>
+        </div>
+        <!---------- end true dragons ---------->
+
+        <!---------- cta ---------->
+        <div class="drag-cta">
+            <h2>Support conservationists and learn about protecting dragons!</h2>
+            <a href="conservation.html" class="pri-btn">Conservation</a>
+        </div>
+        <!---------- end cta ---------->
+    </main>
+    <footer>
+        <div>
+            <p>© Here Be Dragons. All rights reserved.</p>
+            <a href="#">contact@herebedragons.com</a>
+        </div>
+        <div class="socials">
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

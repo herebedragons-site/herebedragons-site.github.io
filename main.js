@@ -7,18 +7,10 @@ function closeNav(){
 }
 
 // nav color change
-// window.addEventListener("scroll", function(){
-//     if(document.documentElement.scrollTop > 100){
-//         document.getElementById("nav-change").className = "color-change";
-//     } else{
-//         document.getElementById("nav-change").className = "";
-//     }
-// });
-
-// window.addEventListener("scroll", function(){
-//     if(document.documentElement.scrollTop > 100){
-//         document.getElementById("home-nav").className = "color-change";
-//     } else{
-//         document.getElementById("home-nav").className = "";
-//     }
-// });
+window.addEventListener("scroll", function(){
+    if(document.documentElement.scrollTop > 150){
+        document.getElementById("nav-change").classList.add("color-change");
+    } else{
+        document.getElementById("nav-change").classList.remove("color-change");
+    }
+});
